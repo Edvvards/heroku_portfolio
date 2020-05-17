@@ -1,0 +1,23 @@
+.tag {
+  display: none;
+  + label {
+    padding: 10px 40px;
+    box-shadow: $shadow;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 14px;
+  }
+  &:checked {
+    + label {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+label[for="fun"] {
+  border-radius: 10px 0px 0px 10px;
+}
+
+label[for="work"] {
+  border-radius: 0px 10px 10px 0px;
+}

@@ -1,0 +1,64 @@
+.header {
+    position: sticky;
+    top: 0;   
+    z-index: 100;
+    padding-bottom: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 20px;
+    margin: 0px 30px;
+    border-bottom: solid 2px $tertiary-color;
+    backdrop-filter: blur(8px);
+    svg {
+    padding: 2px 10px;
+    cursor: pointer;
+    }
+    .logo {
+        font-size: 26px;
+    }
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            li {
+                padding: 2px 10px;
+            }
+        }
+        .fa-bars {
+            display: none;
+        }
+    }
+}
+
+.mobile-nav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(40px);
+    overflow-x: hidden;
+    transition: 0.3s ease-in-out;
+    ul {
+        display: flex;
+        flex-direction: column !important;
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        li {
+            display: block !important;
+            padding: 10px !important;
+        }
+    }
+    .fa-window-close {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 2em;
+    }
+}

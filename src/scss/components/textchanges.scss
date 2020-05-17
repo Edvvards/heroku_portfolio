@@ -1,0 +1,25 @@
+//Text adjustments
+h1, h2, h3, h4, h5, h6 {
+    font-size: 28px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+.tertiary-color {
+    color: $tertiary-color
+}
+
+.underline {
+    text-decoration: underline;
+}

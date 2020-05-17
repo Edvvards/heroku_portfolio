@@ -1,0 +1,74 @@
+//Flex layouts
+.flex-across {
+    display: flex;
+}
+
+.flex-down {
+    display: flex;
+    flex-direction: column;
+    > p {
+        padding: 10px 200px;
+    }
+}
+
+//Grid layouts
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+    grid-gap: 30px;
+    min-height: 80vh;
+    .card {
+    padding: 10px;
+    transition: transform 1s;
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: $shadow;
+        }
+    }
+}
+
+.reverse {
+    direction: rtl;
+    p {
+        direction: ltr;
+    }
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+    text-align: center;
+    .card {
+    padding: 10px;
+    transition: transform 1s;
+    border-radius: $border;
+    min-height: 460px;
+    max-height: 460px;
+    overflow: hidden;
+    width: 500px;
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        &:hover {
+            img {
+                transition: transform 1s;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.outline {
+    box-shadow: $shadow;
+    border-radius: $border;
+    margin: 80px;
+    padding: 30px;
+    > * {
+        padding: 20px;
+    }
+}
